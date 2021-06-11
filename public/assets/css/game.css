@@ -1,13 +1,25 @@
   body {
-        background-color: rgb(177, 224, 177);
+        
+         background-image: url("/assets/images/sky.gif"); /* The image used */
+         background-color: black; /* Used if the image is unavailable */
+
       }
 
+  h3 { color: white;
+
+     }
+
+
+  h4 { color: white;
+
+     }
+
   .headerrow, #messagePane  {
-        background-color: rgb(224, 243, 224); 
+        background-color: white; 
        }
 
   .join_room_response,.left_room_response {
-         background-color: rgb(247, 247, 247);  
+         background-color: white;  
        }
 
   .chat_message {
@@ -17,19 +29,35 @@
        }
 
   table#game_board{
-        border: 4px solid black;
+        border: 4px solid rgb(255, 211, 107);
         margin: 0px;
         padding: 0px;
        }
 
 
   table#game_board td{
-        background-color: rgb(83, 168, 83);
-        border: 2px solid black;
+        background-color: none;
+        border: 2px solid rgb(255, 211, 107);
         margin: 0px;
         padding: 0px;
        }
 
   td.hovered_over:hover{
       background-image: url('/assets/images/hover.gif');
+  }
+
+  #vs{
+    color: white;
+  }
+
+  #whitesum{
+    color: white;
+  }
+
+  #blacksum{
+    color: white;
+  }
+
+  .progress{
+    background-color: rgb(255, 211, 107);
   }

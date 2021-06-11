@@ -29,7 +29,7 @@ socket.on('log',function(array) {
 });
 
 function makeInviteButton(socket_id) {
-     let newHTML = "<button type='button' class='btn btn-outline-primary'>Invite</button>";
+     let newHTML = "<button type='button' class='btn btn-outline-info'>Invite</button>";
      let newNode = $(newHTML);
      newNode.click( () => {
         let payload = {
@@ -43,7 +43,7 @@ function makeInviteButton(socket_id) {
 }
 
 function makeInvitedButton(socket_id) {
-     let newHTML = "<button type='button' class='btn btn-primary'>Invited</button>";
+     let newHTML = "<button type='button' class='btn btn-info'>Invited</button>";
      let newNode = $(newHTML);
      newNode.click( () => {
         let payload = {
@@ -58,7 +58,7 @@ function makeInvitedButton(socket_id) {
 }
 
 function makePlayButton(socket_id) {
-     let newHTML = "<button type='button' class='btn btn-success'>play</button>";
+     let newHTML = "<button type='button' class='btn btn-warning'>play</button>";
      let newNode = $(newHTML);
       newNode.click( () => {
         let payload = {
@@ -296,7 +296,7 @@ socket.on('game_update', (payload) =>{
    }
 
    if( my_color === 'white'){
-       $("#my_color").html('<h3 id="my_color"> I am white</h3>');
+       $("#my_color").html('<h3 id="my_color" "white"> I am white</h3>');
    }
    else if( my_color === 'black'){
        $("#my_color").html('<h3 id="my_color"> I am black</h3>');
@@ -490,7 +490,7 @@ $( () => {
    socket.emit('join_room',request); 
 
    $("#lobbyTitle").html(username + "'s Lobby");
-    $("#quit").html("<a href= 'lobby.html?username="+ username +"' class='btn btn-danger' role='button'>Quit</a>");
+    $("#quit").html("<a href= 'lobby.html?username="+ username +"' class='btn btn-light' role='button'>Quit</a>");
 
 
      $('#chatMessage').keypress( function (e){
